@@ -41,9 +41,23 @@ mova via linha de comando até a pasta <ROOT-APP-FOLDER>. Execute o seguinte com
 ```sh
 mvn spring-boot:run
 ```
-- 3) Serviços rest:
+- 4) Serviços rest:
 A seguir estao os endereços de alguns serviços expostos pela aplicacao: 
-`http://localhost:8080`
+`http://localhost:8080/sandwiches/calculate/`
+```sh
+[{
+"ingredientId" : 1,
+"qtt" : 3},
+{
+"ingredientId" : 2,
+"qtt" : 1
+},
+{
+"ingredientId" : 5,
+"qtt" : 1
+}]
+```
+
 
 ### Passo a passo de instalacao via Docker (Opcional)
 - 1) Build da image docker com maven
