@@ -43,8 +43,14 @@ mvn spring-boot:run
 ```
 - 4) Serviços rest:
 A seguir estao os endereços de alguns serviços expostos pela aplicacao: 
-`http://localhost:8080/sandwiches/calculate/`
+
+
+Lista de ingredientes cadastrados: `http://localhost:8080/api/ingredients/`
+
+
+Calculo do valor do sanduiche: `http://localhost:8080/sandwiches/calculate/`
 ```sh
+JSON INPUT:
 [{
 "ingredientId" : 1,
 "qtt" : 3},
@@ -56,6 +62,18 @@ A seguir estao os endereços de alguns serviços expostos pela aplicacao:
 "ingredientId" : 5,
 "qtt" : 1
 }]
+
+
+JSON OUTPUT:
+{
+"items": {
+"Alface": 1,
+"Queijo": 1,
+"Hambúrguer de carne": 3
+},
+"value": 7.11
+}
+
 ```
 
 
